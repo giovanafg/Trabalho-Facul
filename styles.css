@@ -1,0 +1,224 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #c9b5a2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nome-empresa {
+  color: #7d3400;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*Apresentação*/
+
+.apresentacao {
+  display: flex;
+  justify-content: center;
+  padding: 80px 32px 80px 32px;
+  align-items: center;
+}
+
+.titulo {
+  padding-bottom: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #7d3400;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.texto {
+  width: 480px; /* Largura das fotos */
+  height: 300px; /* Altura das fotos */
+  padding: 24px;
+  font-size: 20px;
+}
+
+.foto-greice img {
+  width: 500px; /* Largura das fotos */
+  height: 500px; /* Altura das fotos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  transition: box-shadow 0.3s ease; /* Efeito suave na interação */
+  border-radius: 800px;
+}
+
+.foto-greice img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica a sombra */
+}
+
+/*Carrocel de fotos*/
+
+.titulo-carrocel {
+  padding-bottom: 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #7d3400;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.galeria-fotos {
+  display: flex; /* Coloca os elementos lado a lado */
+  flex-wrap: wrap; /* Permite quebrar linha se necessário */
+  gap: 0; /* Espaçamento entre as fotos */
+  justify-content: center; /* Centraliza as fotos horizontalmente */
+  padding: 20px 0px 80px 0px;
+}
+
+.galeria-fotos img {
+  width: 190px; /* Largura das fotos */
+  height: 330px; /* Altura das fotos */
+  object-fit: cover; /* Ajusta o conteúdo da imagem */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s;
+}
+
+.galeria-fotos img:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/*Localização*/
+
+.localizacao-div {
+  background-color: #d0c1b8;
+  padding: 24px;
+}
+
+.titulo-localização {
+  padding-bottom: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #7d3400;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.link-localizacao {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.localizacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.localizacao-foto {
+  width: 100px;
+  height: 100px;
+  padding: 24px;
+  align-items: center;
+}
+
+/*Ensaios*/
+
+.ensaios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.titulo-ensaio {
+  padding-bottom: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #7d3400;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.foto-ensaio {
+  padding-bottom: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7d3400;
+}
+
+.texto-formulario {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7d3400;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 20px 100px 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #7d3400;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #f0c4d7;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #e89eb3;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #7d3400;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e89eb3;
+}
